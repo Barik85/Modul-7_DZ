@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/bg.png);
+    background-image: url(../../img/bg.png);
     background-position: center top;
 }
 header {
@@ -208,6 +208,7 @@ h2 {
     width: 288px;
     height: 270px;
     position: relative;
+    overflow: hidden;
 }
 .description {
     background-color: #193149;
@@ -217,12 +218,15 @@ h2 {
     padding: 20px 10px;
     position: absolute;
     top: 0px;
+    left: 0px;
+    margin-left: -100px;
     color: #ffffff;
     font-family: Arial;
     font-size: 10px;
     line-height: 15px;
     text-align: justify;
     opacity: 0;
+    transition: position, margin 2s ease-in-out;
 }
 .description h5 {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -257,19 +261,23 @@ h2 {
     color: #ffffff;
 }
 .first, .second, .third {
-    transition: opacity 1500ms;
+    transition: opacity, margin-left 800ms ease-in-out;
+    left: 0px;
+    top:0px;
+    margin-left: -150px;
 }
 .destination-1:hover .first {
-    display: block;
     opacity: 1;
+    margin-left: 0px;
+    
 }
 .destination-2:hover .second {
-    display: block;
     opacity: 1;
+    margin-left: 0px;
 }
 .destination-3:hover .third {
-    display: block;
     opacity: 1;
+    margin-left: 0px;
 }
 
 
