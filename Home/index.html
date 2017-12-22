@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Home-Modul-7_DZ</title>
 </head>
@@ -36,9 +37,30 @@
     </header>
     <main>
         <div class="slider">
-            <img src="../img/Slide1-boat.jpg" alt="boat">
-            <p class="white-heading">THERE ARE PLENTY OF PLACES</p>
-            <p class="blue-heading"> that are worth seeing</p>
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <img src="../img/Slide1-boat.jpg" alt="boat">
+                    <p class="white-heading">THERE ARE PLENTY OF PLACES</p>
+                    <p class="blue-heading"> that are worth seeing</p>
+                </div>
+                <div class="slide">
+                    <img src="../img/Slide2.jpg" alt="boat">
+                    <p class="white-heading">THERE ARE PLENTY OF PLACES</p>
+                    <p class="blue-heading"> that are worth seeing</p>
+                </div>
+                <div class="slide">
+                    <img src="../img/Slide3.jpg" alt="boat">
+                    <p class="white-heading">THERE ARE PLENTY OF PLACES</p>
+                    <p class="blue-heading"> that are worth seeing</p>
+                </div>
+                <div class="slide">
+                    <img src="../img/Slide4.jpg" alt="boat">
+                    <p class="white-heading">THERE ARE PLENTY OF PLACES</p>
+                    <p class="blue-heading"> that are worth seeing</p>
+                </div>
+
+            </div>
+
             <figure class="navigation">
                 <img src="../img/left-arrow.svg" alt="" class="left-arrow">
                 <img class="right-arrow" src="../img/right-arrow.svg" alt="">
@@ -116,7 +138,15 @@
     <div class="under-footer">
 
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        $('.slider-wrapper').slick({
+            prevArrow: $(".left-arrow"),
+            nextArrow: $(".right-arrow"),
+        });
+        
+    </script>
 </body>
 
 </html>

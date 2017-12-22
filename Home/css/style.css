@@ -71,7 +71,7 @@ main {
     background-color: #ffffff;
     margin: 1px auto 0px auto;
 }
-.slider {
+.slide {
     position: relative;
 }
 .white-heading {
@@ -93,6 +93,9 @@ main {
     position: absolute;
     top: 277px;
     padding: 10px 15px 10px 15px;
+}
+.slider {
+    position: relative;
 }
 .navigation {
     width: 90px;
